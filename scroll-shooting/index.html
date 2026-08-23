@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sky Defender - Scroll Shooting</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-wrap">
+    <canvas id="game-canvas" width="480" height="800"></canvas>
+
+    <!-- HUD -->
+    <div id="hud" class="hidden">
+      <div class="hud-row">
+        <div id="hud-lives" class="hud-item"></div>
+        <div id="hud-bombs" class="hud-item"></div>
+      </div>
+      <div class="hud-row">
+        <div id="hud-score" class="hud-item">Skor: 0</div>
+        <div id="hud-kills" class="hud-item">Musuh: 0/30</div>
+      </div>
+      <div id="boss-hp-wrap" class="hidden">
+        <div id="boss-hp-label">BOSS</div>
+        <div id="boss-hp-bar-bg"><div id="boss-hp-bar"></div></div>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <div id="screen-menu" class="screen">
+      <img id="menu-bg" class="screen-bg" src="" alt="">
+      <div class="screen-content">
+        <h1 id="menu-title">SKY DEFENDER</h1>
+        <p id="menu-subtitle" class="subtitle"></p>
+        <button id="btn-start" class="btn btn-primary">MULAI PERMAINAN</button>
+        <button id="btn-story" class="btn">LIHAT CERITA</button>
+        <p id="menu-howto" class="howto"></p>
+        <p id="menu-footer" class="footer"></p>
+      </div>
+    </div>
+
+    <!-- OPENING STORY -->
+    <div id="screen-opening" class="screen hidden">
+      <div class="screen-content story-content">
+        <h2 id="opening-title"></h2>
+        <img id="opening-image" class="story-image" src="" alt="">
+        <div id="opening-text" class="story-text"></div>
+        <button id="btn-opening-continue" class="btn btn-primary">LANJUTKAN</button>
+      </div>
+    </div>
+
+    <!-- CONTINUE PROMPT -->
+    <div id="screen-continue" class="screen hidden">
+      <div class="screen-content">
+        <h2 id="continue-title"></h2>
+        <p id="continue-message" class="subtitle"></p>
+        <button id="btn-continue-yes" class="btn btn-primary"></button>
+        <button id="btn-continue-no" class="btn"></button>
+        <p id="continue-note" class="footer"></p>
+      </div>
+    </div>
+
+    <!-- ENDING -->
+    <div id="screen-ending" class="screen hidden">
+      <div class="screen-content story-content">
+        <h2 id="ending-title"></h2>
+        <img id="ending-image" class="story-image" src="" alt="">
+        <div id="ending-text" class="story-text"></div>
+        <p id="ending-score" class="subtitle"></p>
+        <button id="btn-ending-restart" class="btn btn-primary"></button>
+      </div>
+    </div>
+
+    <!-- Touch controls (mobile) -->
+    <div id="touch-controls" class="hidden">
+      <div id="touch-stick"></div>
+      <button id="touch-bomb">BOM</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

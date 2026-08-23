@@ -1,0 +1,70 @@
+{
+  "_readme": "Edit file ini untuk menambah/mengubah tokoh. 'image' & 'ending.image' adalah path relatif ke folder puzzle/ (boleh PNG/JPG). Jika file gambar tidak ditemukan, game otomatis menampilkan kotak warna + inisial sebagai pengganti, jadi aman untuk diisi belakangan.",
+  "characters": [
+    {
+      "id": "rei",
+      "name": "Rei \"Baja\"",
+      "image": "assets/images/rei.png",
+      "color": [230, 70, 70],
+      "ending": {
+        "title": "Sang Juara Tak Terkalahkan",
+        "image": "assets/images/rei_ending.png",
+        "text": [
+          "Tumpukan blok terakhir runtuh di sisi lawan.",
+          "Rei menghela napas panjang, menyeka keringat di dahinya.",
+          "\"Latihan bertahun-tahun akhirnya membuahkan hasil,\" gumamnya.",
+          "Ia mengangkat tangan tinggi-tinggi, disambut sorak penonton.",
+          "Gelar juara arena blok kini resmi menjadi miliknya."
+        ]
+      }
+    },
+    {
+      "id": "luna",
+      "name": "Luna Nightshade",
+      "image": "assets/images/luna.png",
+      "color": [130, 90, 220],
+      "ending": {
+        "title": "Bayangan yang Menang",
+        "image": "assets/images/luna_ending.png",
+        "text": [
+          "Dengan tenang, Luna menyaksikan papan lawan penuh sesak.",
+          "Ia tak pernah terburu-buru; setiap blok ia tempatkan dengan presisi.",
+          "\"Kesabaran selalu mengalahkan kecepatan,\" bisiknya pelan.",
+          "Cahaya bulan menyinari kemenangannya malam itu."
+        ]
+      }
+    },
+    {
+      "id": "bram",
+      "name": "Bram Ironfist",
+      "image": "assets/images/bram.png",
+      "color": [235, 165, 40],
+      "ending": {
+        "title": "Kekuatan Sang Penghancur",
+        "image": "assets/images/bram_ending.png",
+        "text": [
+          "Bram meninju udara sambil tertawa lepas.",
+          "Serangan garbage bertubi-tubi yang ia kirim membuat lawan kewalahan.",
+          "\"Bukan cuma otot, strategi juga penting!\" serunya bangga.",
+          "Arena bergemuruh oleh sorakan penonton yang terpukau."
+        ]
+      }
+    },
+    {
+      "id": "sakura",
+      "name": "Sakura Hayashi",
+      "image": "assets/images/sakura.png",
+      "color": [240, 120, 170],
+      "ending": {
+        "title": "Bunga yang Mekar di Puncak",
+        "image": "assets/images/sakura_ending.png",
+        "text": [
+          "Kelopak bunga imajiner seolah berjatuhan saat Sakura menang.",
+          "Ia tersenyum lembut ke arah kamera penyiaran.",
+          "\"Terima kasih sudah bermain denganku,\" ucapnya sopan.",
+          "Namanya kini tercatat sebagai juara musim ini."
+        ]
+      }
+    }
+  ]
+}

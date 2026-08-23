@@ -1,0 +1,30 @@
+{
+  "_petunjuk": "Atur gelombang musuh di sini. 'reward' adalah kredit yang didapat pemain saat 1 musuh jenis itu berhasil dikalahkan. 'image' adalah nama file di assets/images/.",
+  "base_hp": 100,
+  "waves": [
+    {
+      "name": "Gelombang 1",
+      "spawn_interval": 1.4,
+      "enemies": [
+        { "type": "goblin", "count": 6, "hp": 30, "damage": 6, "speed": 55, "reward": 15, "color": [180, 60, 60], "image": "musuh_goblin.png" }
+      ]
+    },
+    {
+      "name": "Gelombang 2",
+      "spawn_interval": 1.2,
+      "enemies": [
+        { "type": "goblin", "count": 5, "hp": 35, "damage": 7, "speed": 60, "reward": 15, "color": [180, 60, 60], "image": "musuh_goblin.png" },
+        { "type": "orc", "count": 3, "hp": 90, "damage": 12, "speed": 40, "reward": 30, "color": [120, 90, 40], "image": "musuh_orc.png" }
+      ]
+    },
+    {
+      "name": "Gelombang 3",
+      "spawn_interval": 1.0,
+      "enemies": [
+        { "type": "goblin", "count": 6, "hp": 40, "damage": 8, "speed": 65, "reward": 15, "color": [180, 60, 60], "image": "musuh_goblin.png" },
+        { "type": "orc", "count": 4, "hp": 110, "damage": 14, "speed": 42, "reward": 30, "color": [120, 90, 40], "image": "musuh_orc.png" },
+        { "type": "raksasa", "count": 1, "hp": 300, "damage": 25, "speed": 28, "reward": 80, "color": [70, 40, 90], "image": "musuh_raksasa.png" }
+      ]
+    }
+  ]
+}

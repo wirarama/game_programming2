@@ -1,0 +1,135 @@
+{
+  "_readme": "File ini mengatur seluruh angka gameplay. Ubah nilai lalu refresh browser (F5) untuk melihat perubahan. Semua path gambar relatif terhadap folder 'assets/img/'.",
+
+  "player": {
+    "image": "player.png",
+    "startLives": 3,
+    "speed": 320,
+    "hitboxRadius": 14,
+    "invincibleAfterHitSeconds": 2,
+    "bulletImage": "bullet_player.png",
+    "bulletDamage": 1,
+    "bulletSpeed": 620,
+    "fireRatePerSecond": 6,
+    "startX": 0.5,
+    "startYFromBottom": 110
+  },
+
+  "bomb": {
+    "_readme": "shotsToChargeBomb = jumlah tembakan yang harus dilepaskan untuk mendapat 1 bom baru. startingBombs = bom di awal permainan. maxBombs = batas maksimum bom yang bisa disimpan. refillOnDeath = jumlah bom yang diberikan setiap pemain kehilangan 1 nyawa.",
+    "icon": "bomb_icon.png",
+    "blastImage": "bomb_blast.png",
+    "shotsToChargeBomb": 40,
+    "startingBombs": 1,
+    "maxBombs": 3,
+    "refillOnDeath": 1,
+    "damage": 999,
+    "keyBinding": "KeyX / Shift"
+  },
+
+  "enemiesToTriggerBoss": 30,
+
+  "enemyTypes": [
+    {
+      "id": "scout",
+      "name": "Scout Merah",
+      "image": "enemy1_scout.png",
+      "hitsToKill": 1,
+      "speed": 140,
+      "score": 10,
+      "spawnWeight": 30,
+      "movement": "straight",
+      "canShoot": false,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "id": "fighter",
+      "name": "Fighter Ungu",
+      "image": "enemy2_fighter.png",
+      "hitsToKill": 2,
+      "speed": 120,
+      "score": 20,
+      "spawnWeight": 25,
+      "movement": "zigzag",
+      "canShoot": true,
+      "shootIntervalSeconds": 2.2,
+      "width": 52,
+      "height": 52
+    },
+    {
+      "id": "bomber",
+      "name": "Bomber Hijau",
+      "image": "enemy3_bomber.png",
+      "hitsToKill": 3,
+      "speed": 90,
+      "score": 30,
+      "spawnWeight": 20,
+      "movement": "straight",
+      "canShoot": true,
+      "shootIntervalSeconds": 1.8,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "interceptor",
+      "name": "Interceptor Oranye",
+      "image": "enemy4_interceptor.png",
+      "hitsToKill": 2,
+      "speed": 200,
+      "score": 25,
+      "spawnWeight": 15,
+      "movement": "sine",
+      "canShoot": false,
+      "width": 46,
+      "height": 58
+    },
+    {
+      "id": "cruiser",
+      "name": "Cruiser Teal",
+      "image": "enemy5_cruiser.png",
+      "hitsToKill": 5,
+      "speed": 70,
+      "score": 50,
+      "spawnWeight": 10,
+      "movement": "straight",
+      "canShoot": true,
+      "shootIntervalSeconds": 1.5,
+      "width": 60,
+      "height": 44
+    }
+  ],
+
+  "boss": {
+    "name": "Mothership Kegelapan",
+    "image": "boss.png",
+    "hitsToKill": 80,
+    "width": 220,
+    "height": 160,
+    "speed": 80,
+    "score": 1000,
+    "entrySeconds": 2,
+    "shootIntervalSeconds": 0.9,
+    "bulletsPerVolley": 3,
+    "phaseTwoHpPercent": 50,
+    "phaseTwoShootIntervalSeconds": 0.5
+  },
+
+  "spawning": {
+    "initialDelaySeconds": 1.5,
+    "minSpawnIntervalSeconds": 0.5,
+    "maxSpawnIntervalSeconds": 1.2,
+    "difficultyRampEverySeconds": 20,
+    "difficultyRampFactor": 0.92
+  },
+
+  "enemyBullet": {
+    "image": "bullet_enemy.png",
+    "speed": 260,
+    "damageToPlayer": 1
+  },
+
+  "scoring": {
+    "extraLifeEveryScore": 5000
+  }
+}

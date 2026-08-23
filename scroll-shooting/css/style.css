@@ -1,0 +1,203 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #05050f;
+  color: #eaf2ff;
+  font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;
+}
+
+#game-wrap {
+  position: relative;
+  width: 480px;
+  height: 800px;
+  margin: 0 auto;
+  background: #000;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(80, 160, 255, 0.25);
+}
+
+@media (max-width: 500px) {
+  #game-wrap {
+    width: 100vw;
+    height: 100vh;
+  }
+  #game-canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+canvas {
+  display: block;
+  image-rendering: pixelated;
+}
+
+.hidden { display: none !important; }
+
+/* ---------- HUD ---------- */
+#hud {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  padding: 8px 10px;
+  z-index: 20;
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+}
+.hud-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.hud-item { display: flex; align-items: center; gap: 4px; }
+.hud-item img { height: 18px; vertical-align: middle; }
+
+#boss-hp-wrap {
+  margin-top: 6px;
+  text-align: center;
+}
+#boss-hp-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ff6b7a;
+  font-weight: 700;
+}
+#boss-hp-bar-bg {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+}
+#boss-hp-bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #ff3b4e, #ff9a3b);
+  transition: width 0.2s ease-out;
+}
+
+/* ---------- Screens (menu / story / ending / continue) ---------- */
+.screen {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.screen-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.55);
+}
+.screen-content {
+  position: relative;
+  z-index: 2;
+  width: 86%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu-title {
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin: 0;
+  color: #7fd7ff;
+  text-shadow: 0 0 14px rgba(120, 220, 255, 0.8), 0 2px 4px rgba(0,0,0,0.8);
+}
+.subtitle {
+  font-size: 15px;
+  color: #cfe6ff;
+  margin: 0 0 8px 0;
+}
+.howto {
+  font-size: 12px;
+  color: #9fb6d0;
+  margin-top: 14px;
+}
+.footer {
+  font-size: 12px;
+  color: #ffcf7a;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: 2px solid #7fd7ff;
+  background: rgba(10, 20, 40, 0.6);
+  color: #eaf6ff;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn:hover { transform: scale(1.04); background: rgba(30, 70, 110, 0.8); }
+.btn:active { transform: scale(0.97); }
+.btn-primary {
+  background: linear-gradient(180deg, #5fd0ff, #2a90d8);
+  color: #06121f;
+  border-color: #cdf1ff;
+}
+
+.story-content { justify-content: flex-start; padding-top: 30px; height: 100%; overflow-y: auto; }
+.story-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.story-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #dbe9ff;
+  text-align: left;
+}
+.story-text p { margin: 0 0 10px 0; }
+
+/* ---------- Touch controls ---------- */
+#touch-controls {
+  position: absolute;
+  inset: 0;
+  z-index: 25;
+  pointer-events: none;
+}
+#touch-stick {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  border: 2px solid rgba(255,255,255,0.25);
+  pointer-events: auto;
+}
+#touch-bomb {
+  position: absolute;
+  bottom: 45px;
+  right: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255,120,60,0.35);
+  border: 2px solid rgba(255,180,100,0.7);
+  color: #fff;
+  font-weight: 700;
+  pointer-events: auto;
+}

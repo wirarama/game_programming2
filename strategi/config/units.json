@@ -1,0 +1,54 @@
+{
+  "_petunjuk": "File ini mengatur jenis prajurit yang bisa ditempatkan pemain. Silakan ubah angka atau nama file gambar sesuai keinginan. Path gambar relatif terhadap folder assets/images/.",
+  "starting_credit": 200,
+  "units": {
+    "pemanah": {
+      "display_name": "Pemanah",
+      "deskripsi": "Serangan jarak jauh, damage sedang, HP rendah.",
+      "cost": 50,
+      "hp": 40,
+      "damage": 10,
+      "range": 230,
+      "attack_speed": 1.1,
+      "splash_radius": 0,
+      "color": [86, 168, 90],
+      "image": "pemanah.png"
+    },
+    "pelindung": {
+      "display_name": "Pelindung",
+      "deskripsi": "HP sangat tinggi, damage rendah, jarak pendek. Cocok menahan musuh di depan.",
+      "cost": 70,
+      "hp": 160,
+      "damage": 6,
+      "range": 90,
+      "attack_speed": 0.9,
+      "splash_radius": 0,
+      "color": [90, 130, 200],
+      "image": "pelindung.png"
+    },
+    "penyerang": {
+      "display_name": "Penyerang",
+      "deskripsi": "Damage tinggi jarak dekat, HP sedang.",
+      "cost": 60,
+      "hp": 80,
+      "damage": 20,
+      "range": 110,
+      "attack_speed": 1.3,
+      "splash_radius": 0,
+      "color": [200, 100, 60],
+      "image": "penyerang.png"
+    },
+    "penyihir": {
+      "display_name": "Penyihir",
+      "deskripsi": "Serangan area (splash), damage sedang, HP rendah.",
+      "cost": 80,
+      "hp": 45,
+      "damage": 14,
+      "range": 200,
+      "attack_speed": 0.7,
+      "splash_radius": 60,
+      "color": [160, 80, 190],
+      "image": "penyihir.png"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_petunjuk": "Teks pembuka (opening) dan penutup (ending) game. Bebas diedit tanpa perlu mengubah kode. '\\n' bisa dipakai untuk baris baru dalam satu paragraf.",
+  "opening": {
+    "title": "Benteng Terakhir",
+    "paragraphs": [
+      "Kerajaan sedang diserang gerombolan musuh dari timur.",
+      "Sebagai komandan, tugasmu adalah menyusun pasukan: Pemanah, Pelindung, Penyerang, dan Penyihir.",
+      "Gunakan kredit dengan bijak. Setiap musuh yang berhasil dikalahkan akan menambah kreditmu untuk gelombang berikutnya.",
+      "Bertahanlah selama mungkin dan lindungi benteng!"
+    ],
+    "button_text": "Mulai Permainan"
+  },
+  "ending_win": {
+    "title": "Kemenangan!",
+    "paragraphs": [
+      "Seluruh gelombang musuh berhasil dihancurkan.",
+      "Benteng tetap berdiri berkat strategi penempatan pasukanmu.",
+      "Terima kasih telah bermain!"
+    ],
+    "button_text": "Main Lagi"
+  },
+  "ending_lose": {
+    "title": "Benteng Runtuh",
+    "paragraphs": [
+      "Pasukan musuh berhasil menembus pertahanan dan menghancurkan benteng.",
+      "Coba susun strategi penempatan pasukan yang berbeda pada percobaan berikutnya.",
+      "Jangan menyerah, Komandan!"
+    ],
+    "button_text": "Coba Lagi"
+  }
+}
