@@ -1,0 +1,63 @@
+{
+  "_readme": "Edit teks dan gambar menu, cerita opening, dan ending di sini. Semua path gambar relatif terhadap folder 'assets/img/'. Newline bisa ditulis dengan '\\n'.",
+
+  "menu": {
+    "background": "bg_menu.png",
+    "title": "SKY DEFENDER",
+    "subtitle": "Pesawat Tempur Angkasa",
+    "startButtonText": "MULAI PERMAINAN",
+    "storyButtonText": "LIHAT CERITA",
+    "howToPlayText": "Panah/WASD: Gerak  |  Spasi: Tembak  |  X: Bom",
+    "footerText": "Kalahkan 30 musuh untuk memanggil Boss!"
+  },
+
+  "opening": {
+    "image": "story_opening.png",
+    "title": "PROLOG",
+    "paragraphs": [
+      "Tahun 2199. Armada alien 'Kegelapan' menyerang stasiun luar angkasa Bumi tanpa peringatan.",
+      "Kau adalah pilot terakhir skuadron Sky Defender, diberi pesawat tempur prototipe bersenjata meriam kilat dan bom EMP.",
+      "Majulah menembus gelombang musuh, hancurkan Mothership mereka, dan selamatkan umat manusia!"
+    ],
+    "continueButtonText": "LANJUTKAN"
+  },
+
+  "endingWin": {
+    "image": "story_ending_win.png",
+    "title": "KEMENANGAN!",
+    "paragraphs": [
+      "Mothership Kegelapan meledak berkeping-keping di angkasa.",
+      "Sinyal darurat dari Bumi berhenti berbunyi — ancaman telah lenyap.",
+      "Kau kembali sebagai pahlawan yang akan dikenang sepanjang sejarah umat manusia."
+    ],
+    "restartButtonText": "MAIN LAGI"
+  },
+
+  "endingLose": {
+    "image": "story_ending_lose.png",
+    "title": "GUGUR DALAM TUGAS",
+    "paragraphs": [
+      "Pesawatmu kehabisan tenaga di tengah kegelapan angkasa.",
+      "Namun pengorbananmu memberi waktu bagi skuadron berikutnya untuk bersiap.",
+      "Perjuangan akan dilanjutkan oleh pilot lain... mungkin kamu sendiri?"
+    ],
+    "restartButtonText": "COBA LAGI"
+  },
+
+  "continuePrompt": {
+    "title": "PESAWAT HANCUR!",
+    "message": "Nyawa kamu sudah habis. Lanjutkan perjuangan?",
+    "continueButtonText": "LANJUTKAN (Continue)",
+    "endButtonText": "SELESAI (Selesai)",
+    "note": "Skor dan progres musuh tetap tersimpan jika memilih Lanjutkan."
+  },
+
+  "hud": {
+    "livesLabel": "Nyawa",
+    "bombLabel": "Bom",
+    "scoreLabel": "Skor",
+    "killLabel": "Musuh",
+    "bossWarningText": "BOSS MENDEKAT!",
+    "bossHpLabel": "HP Boss"
+  }
+}
